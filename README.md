@@ -7,9 +7,9 @@ The project analyzes pizza sales and tries to identify top trends, and gives ins
 
 The data set was obtained from Kaggle and it contains 4 tables - Orders_details, Orders, Pizzas, and Pizzas_types. 
  1.  orders: it contains 3 columns: 
- - order_id, 
- -  order_date, 
- -  order_time
+   - order_id, 
+   -  order_date, 
+   -  order_time
  2.  order_details: it contains 4 columns: 
   -  order_details_id	
  - order_id	
