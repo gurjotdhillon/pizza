@@ -1,69 +1,48 @@
-# PIZZA SALES
+## Pizza Sales Analysis Project
+This project analyzes pizza sales data using SQL queries to gain insights into sales trends, customer preferences, and revenue patterns.
 
-The project analyzes pizza sales and tries to identify top trends, and gives insight into daily and monthly sales, top earners in terms of size, category, and also analyzes the sales based on quantity.
+### Dataset
 
+The dataset used for this analysis contains the following tables:
 
-## About Data
+#### orders: Contains information about each order, including order ID, date, and time.
+#### order_details: Contains details about each pizza within an order, such as pizza ID, quantity, and size.
+#### pizzas: Contains information about each pizza, including pizza ID, type, size, and price.
+#### pizza_types: Contains information about different pizza types, including pizza type ID, name, and category.
+SQL Queries
 
-The data set was obtained from Kaggle and it contains 4 tables - Orders_details, Orders, Pizzas, and Pizzas_types. 
- 1.  orders: it contains 3 columns: 
-   - order_id, 
-   -  order_date, 
-   -  order_time
- 2.  order_details: it contains 4 columns: 
-  -  order_details_id	
- - order_id	
- - pizza_id	
- -  quantity
- 3. pizzas_types: it contains 4 columns: 
-   - pizza_type_id,	
-   - name,	
-   - category,	
-   - ingredients,
- 4.  pizzas: it contains 
-   - pizza_id	
-   - pizza_type_id	
-   - size	
-   - price
+The SQL queries in this project cover a wide range of analysis, including:
 
+### Basic Analysis:
+Total number of orders placed
+Total revenue generated
+Highest-priced pizza
+Most common pizza size ordered
+Top 5 most ordered pizza types
 
+### Intermediate Analysis:
+Total quantity of each pizza category ordered
+Distribution of orders by hour of the day
+Category-wise distribution of pizzas
+Average number of pizzas ordered per day
+Top 3 most ordered pizza types based on revenue
 
+### Advanced Analysis:
+Percentage contribution of each pizza type to total revenue
+Cumulative revenue generated over time
+Top 3 most ordered pizza types based on revenue for each pizza category   
+  
+### Insights
 
-## Objectives:
-Our goal is to answer the following questions regarding pizza sales:
-- Retrieve the total number of orders placed.
+The analysis reveals several interesting insights, such as:
 
-- Calculate the total revenue generated from pizza sales.
+- The total number of orders placed is 21,350.
+- The most common pizza size ordered is Large.
+- The top 5 most ordered pizza types are The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The California Chicken Pizza, The Spicy Italian Pizza, and The Big Meat Pizza.
+- The peak ordering hours are between 12 PM and 2 PM.
+- The average number of pizzas ordered per day is 139.
+- The Classic Deluxe Pizza, The Barbecue Chicken Pizza, and The California Chicken Pizza are the top 3 pizza types by revenue.
 
-- Identify the highest-priced pizza.
+### Conclusion
 
-- Identify the most common pizza size ordered.
-
-- List the top 5 most ordered pizza types along with their quantities.
-
-- Join the necessary tables to find the total quantity of each pizza category ordered.
-
-- Determine the distribution of orders by hour of the day.
-
-- Join relevant tables to find the category-wise distribution of pizzas.
-
-- Group the orders by date and calculate the average number of daily pizzas.
-
-- Determine the top 3 most ordered pizza types based on revenue.
-
-- Calculate the percentage contribution of each pizza type to total revenue.
-
-- Analyze the cumulative revenue generated over time.
-
-- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
-## Methodology
-I have analyzed the project using Postgres SQL and used the following SQL tools:
- - Joins- inner and Outer
- - Aggregations - SUM, COUNT, Average, Date
- - Window Functions - Row number, Sum(sum)
- - Sub Queries
-
- 
- 
-## Dependencies
-- PgAdmin
+This project demonstrates the power of SQL in analyzing data and extracting meaningful insights. The findings can be used to inform business decisions related to inventory management, marketing campaigns, and menu optimization.
