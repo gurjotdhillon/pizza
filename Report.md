@@ -15,8 +15,8 @@ The queries analyze customer ordering habits, top-performing pizzas, category-le
 Revenue was calculated by multiplying price × quantity for every order line.
 
 **Total Revenue:  
-💰 `$X,XXX,XXX.xx`**  
-(*Insert actual number after running query*)
+💰 $817,860.05
+
 
 ---
 
@@ -24,17 +24,16 @@ Revenue was calculated by multiplying price × quantity for every order line.
 The most expensive pizza was identified by joining `pizza_types` and `pizzas`.
 
 **Result:**  
-- **Pizza:** `<Pizza Name>`  
-- **Price:** `<Price>`  
+- **Pizza:** `The Greek Pizza`  
+- **Price:** `$35.95`  
 
-(*Replace with actual output*)
 
 ---
 
 ## 4. Most Common Pizza Size Ordered
 Analyzed the number of order lines per size.
 
-**Most Ordered Size:** **`<Size>`**
+**Most Ordered Size:** **`Large`** with `18,526` orders
 
 ---
 
@@ -43,7 +42,7 @@ Ranked pizzas based on total quantity ordered.
 
 | Rank | Pizza Type | Total Quantity |
 |------|------------|----------------|
-| 1 | … | … |
+| 1 | "classic_dlx" | … |
 | 2 | … | … |
 | 3 | … | … |
 | 4 | … | … |
