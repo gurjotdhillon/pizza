@@ -42,11 +42,11 @@ Ranked pizzas based on total quantity ordered.
 
 | Rank | Pizza Type | Total Quantity |
 |------|------------|----------------|
-| 1 | "classic_dlx" | … |
-| 2 | … | … |
-| 3 | … | … |
-| 4 | … | … |
-| 5 | … | … |
+| 1 | classic_dlx | 2453|
+| 2 | bbq_ckn | 2432 |
+| 3 | hawaiian | 2422 |
+| 4 | pepperoni | 2418 |
+| 5 | thai_ckn | 2371 |
 
 ---
 
