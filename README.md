@@ -1,48 +1,85 @@
-## Pizza Sales Analysis Project
-This project analyzes pizza sales data using SQL queries to gain insights into sales trends, customer preferences, and revenue patterns.
+# 🍕 Pizza Sales SQL Analytics Project
 
-### Dataset
+This project analyzes a pizza delivery company's sales data using advanced SQL techniques.  
+The dataset includes order information, pizza types, pizza sizes, categories, and prices.
 
-The dataset used for this analysis contains the following tables:
+Through a series of analytical SQL queries, this project answers key business questions related to:
 
-#### orders: Contains information about each order, including order ID, date, and time.
-#### order_details: Contains details about each pizza within an order, such as pizza ID, quantity, and size.
-#### pizzas: Contains information about each pizza, including pizza ID, type, size, and price.
-#### pizza_types: Contains information about different pizza types, including pizza type ID, name, and category.
-SQL Queries
+- Total orders and revenue
+- Best-selling pizzas
+- Most popular pizza sizes and categories
+- Revenue contribution by pizza type
+- Order patterns by time of day
+- Category-wise distribution and sales performance
+- Cumulative revenue trends
+- Top pizza types within each category
 
-The SQL queries in this project cover a wide range of analysis, including:
+---
 
-### Basic Analysis:
-Total number of orders placed
-Total revenue generated
-Highest-priced pizza
-Most common pizza size ordered
-Top 5 most ordered pizza types
+## 📁 Database Tables Used
 
-### Intermediate Analysis:
-Total quantity of each pizza category ordered
-Distribution of orders by hour of the day
-Category-wise distribution of pizzas
-Average number of pizzas ordered per day
-Top 3 most ordered pizza types based on revenue
+The dataset includes the following tables:
 
-### Advanced Analysis:
-Percentage contribution of each pizza type to total revenue
-Cumulative revenue generated over time
-Top 3 most ordered pizza types based on revenue for each pizza category   
-  
-### Insights
+| Table | Description |
+|-------|-------------|
+| **orders** | Order ID, order date, and order time |
+| **order_details** | Line-level quantity and pizza ordered per order |
+| **pizzas** | Pizza ID, size, price, and pizza type ID |
+| **pizza_types** | Pizza name, category, and description |
 
-The analysis reveals several interesting insights, such as:
+---
 
-- The total number of orders placed is 21,350.
-- The most common pizza size ordered is Large.
-- The top 5 most ordered pizza types are The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The California Chicken Pizza, The Spicy Italian Pizza, and The Big Meat Pizza.
-- The peak ordering hours are between 12 PM and 2 PM.
-- The average number of pizzas ordered per day is 139.
-- The Classic Deluxe Pizza, The Barbecue Chicken Pizza, and The California Chicken Pizza are the top 3 pizza types by revenue.
+## 📊 Key Questions Answered
 
-### Conclusion
+This project uses SQL to answer:
 
-This project demonstrates the power of SQL in analyzing data and extracting meaningful insights. The findings can be used to inform business decisions related to inventory management, marketing campaigns, and menu optimization.
+1. **How many total orders were placed?**  
+2. **How much total revenue was generated?**  
+3. **Which pizza is the most expensive?**  
+4. **What is the most commonly ordered pizza size?**  
+5. **What are the top 5 most-ordered pizza types?**  
+6. **Which pizza categories receive the most orders?**  
+7. **How are orders distributed by hour of the day?**  
+8. **What is the daily average number of pizzas sold?**  
+9. **Which pizza types generate the most revenue?**  
+10. **What percent of revenue does each category contribute?**  
+11. **How does cumulative revenue grow over time?**  
+12. **Top 3 revenue-generating pizza types within each category**
+
+---
+
+## 🧠 SQL Skills Demonstrated
+
+This project highlights:
+
+- Aggregations (SUM, COUNT, AVG)
+- Subqueries
+- CTEs
+- Window Functions (`ROW_NUMBER`, cumulative `SUM OVER`)
+- Date/Time functions
+- Multi-table JOINs
+- Ranking & revenue analysis
+
+---
+
+## 📄 Project Files
+
+| File | Description |
+|------|-------------|
+| **pizza_sales_queries.sql** | Full SQL code used for all analysis |
+| **Report.md** | Clean, written report summarizing findings |
+
+---
+
+## 🚀 How to Use
+
+1. Import the dataset into PostgreSQL / MySQL.
+2. Run the SQL queries in `pizza_sales_queries.sql`.
+3. Review insights in the report.
+
+---
+
+## 📝 Author
+
+Gurjot Dhillon 
+SQL | Data Analytics | Business Intelligence
