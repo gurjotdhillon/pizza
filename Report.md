@@ -111,5 +111,3 @@ Revenue was steady across 2015, with monthly totals ranging from roughly $64,000
 | Supreme | Spicy Italian ($34,831.25) | Italian Supreme ($33,476.75) | Sicilian ($30,940.50) |
 | Veggie | Four Cheese ($32,265.70) | Mexicana ($26,780.75) | Five Cheese ($26,066.50) |
 
-```sql
-SUM(quantity * price) OVER (ORDER BY order_date)
