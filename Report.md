@@ -90,10 +90,11 @@ Calculated revenue per pizza type and ranked descending.
 Revenue for each category divided by total revenue:
 
 | Category | Revenue | % Contribution |
+|------|------------|----------------|
 | Classic | $220,053.10 | 26.91% |
 | Supreme | $208,197.00 | 25.46% |
 | Chicken	| $195,919.50	| 23.96% |
-| Veggie | 193,690.45 | 23.68% |
+| Veggie | 193,690.45 | 23.68% | 
 ---
 
 ## 11. Cumulative Revenue Over Time
