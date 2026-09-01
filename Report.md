@@ -104,11 +104,12 @@ Revenue was steady across 2015, with monthly totals ranging from roughly $64,000
 
 ## 12. Top 3 Pizza Types by Revenue, Per Category
 
-Category	#1	#2	#3
-Chicken: 1. Thai Chicken ($43,434.25)	  2. Barbecue Chicken ($42,768.00)	  3. California Chicken ($41,409.50)
-Classic: 1. Classic Deluxe ($38,180.50)	2. Hawaiian ($32,273.25)          	3. Pepperoni ($30,161.75)
-Supreme: 1. Spicy Italian ($34,831.25)	2. Italian Supreme ($33,476.75)	    3. Sicilian ($30,940.50)
-Veggie:	 1. Four Cheese ($32,265.70)	  2. Mexicana ($26,780.75)	          3. Five Cheese ($26,066.50)
+| Category | #1 | #2 | #3 |
+|---------|------------------|--------------------|---------------------|
+| Chicken | Thai Chicken ($43,434.25) | Barbecue Chicken ($42,768.00) | California Chicken ($41,409.50) |
+| Classic | Classic Deluxe ($38,180.50) | Hawaiian ($32,273.25) | Pepperoni ($30,161.75) |
+| Supreme | Spicy Italian ($34,831.25) | Italian Supreme ($33,476.75) | Sicilian ($30,940.50) |
+| Veggie | Four Cheese ($32,265.70) | Mexicana ($26,780.75) | Five Cheese ($26,066.50) |
 
 ```sql
 SUM(quantity * price) OVER (ORDER BY order_date)
