@@ -52,6 +52,10 @@ Ranked pizzas based on total quantity ordered.
 
 ## 6. Total Quantity Ordered by Category
 Aggregate orders grouped by pizza category.
+Classic	14,888
+Supreme	11,987
+Veggie	11,649
+Chicken	11,050
 
 This reveals which categories are most popular among customers.
 
@@ -66,7 +70,7 @@ Using `DATE_PART('hour', order_time)`:
 ---
 
 ## 8. Average Number of Pizzas Ordered Per Day
-Total pizzas sold each day were averaged.
+Average pizzas/day: 138.47
 
 **Average pizzas/day:** **`X.xx`**
 
@@ -74,25 +78,36 @@ Total pizzas sold each day were averaged.
 
 ## 9. Top Revenue-Generating Pizza Types
 Calculated revenue per pizza type and ranked descending.
+1	The Thai Chicken Pizza	$43,434.25
+2	The Barbecue Chicken Pizza	$42,768.00
+3	The California Chicken Pizza	$41,409.50
+4	The Classic Deluxe Pizza	$38,180.50
+5	The Spicy Italian Pizza	$34,831.25
 
 ---
 
 ## 10. Revenue Contribution by Category
 Revenue for each category divided by total revenue:
 
-| Category | % Contribution |
-|----------|----------------|
-| Classic | …% |
-| Supreme | …% |
-| Chicken | …% |
-| Veggie | …% |
-
-(*Insert results after running query*)
-
+Category Revenue	     % Contribution
+Classic	 $220,053.10	 26.91%
+Supreme	 $208,197.00	 25.46%
+Chicken	 $195,919.50	 23.96%
+Veggie	 193,690.45	   23.68%
 ---
 
 ## 11. Cumulative Revenue Over Time
-Window function used:
+Revenue was steady across 2015, with monthly totals ranging from roughly $64,000 to $72,500 and no strong seasonal spike. First-half revenue ($413,719.75) ran about 2% ahead of second-half revenue ($404,140.30) — essentially flat growth over the year rather than a sharp upward trend.
+
+---
+
+## 12. Top 3 Pizza Types by Revenue, Per Category
+
+Category	#1	#2	#3
+Chicken: 1. Thai Chicken ($43,434.25)	  2. Barbecue Chicken ($42,768.00)	  3. California Chicken ($41,409.50)
+Classic: 1. Classic Deluxe ($38,180.50)	2. Hawaiian ($32,273.25)          	3. Pepperoni ($30,161.75)
+Supreme: 1. Spicy Italian ($34,831.25)	2. Italian Supreme ($33,476.75)	    3. Sicilian ($30,940.50)
+Veggie:	 1. Four Cheese ($32,265.70)	  2. Mexicana ($26,780.75)	          3. Five Cheese ($26,066.50)
 
 ```sql
 SUM(quantity * price) OVER (ORDER BY order_date)
